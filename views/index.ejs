@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <!-- googlefonts -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Crimson+Text&family=Josefin+Sans:wght@500&family=Lobster&family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section id="navbar">
+    <div class="main_nav_div">
+        <div class="hamburger-menu">
+            <div class="bar-top"></div>
+            <div class="bar-middle"></div>
+            <div class="bar-bottom"></div>
+          </div>
+        <div class="logo">
+            <h1>TIME</h1>
+        </div>
+        <div class="search">
+            <i class="fa fa-search" aria-hidden="true"></i>
+            <input type="text" name="search" placeholder="Search...">
+        </div>
+    </div>
+    </section>
+    <hr>
+    <section class="main_box">
+        <div class="Featured_voices"  style="margin-top: 4rem;">
+            <h1>FEATURED VOICES</h1>
+         <div class="ferdata">
+            <%mdat.forEach(function(ar) {%>
+            <div class="ferdetail">
+                <div><h3 style="color: red;"><%=ar.title%></h3></div>
+                <p><b><%=ar.decer%></b></p>
+                
+            </div>
+            <%})%>
+         </div>
+        </div>
+        <div class="latest_Update" style="background-color: yellow;">
+            <h1>LATEST STORIES</h1>
+            <%alldat.forEach(function(par) {%>
+                <a href="<%=par.link%>"><h4><%=par.title%></h4></a>
+                <p><b>January 12 2131 12-213 213 23</b></p>   
+            <%})%>
+                        
+            
+           
+        </div>
+
+    </section>
+    
+</body>
+</html>

@@ -1,0 +1,119 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.main_nav_div{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+
+}
+.logo h1{
+    color: red;
+    font-size: 3rem;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 0.3rem;
+}
+.search:last-of-type{
+    margin-left: auto;
+}
+.search input{
+    border: none;
+}
+.search input:focus{
+    outline: none;
+}
+.search ::placeholder {
+    color:gray;
+    font-weight: 900;
+    font-family: 'Open Sans', sans-serif;
+}
+.hamburger-menu {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    height: 2.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+  }
+  .bar-top,
+  .bar-middle,
+  .bar-bottom {
+    height: 3px;
+    background: rgb(142, 142, 142);
+    border-radius: 5px;
+    margin: 3px 0;
+    transform-origin: left;
+    transition: all 0.3s;
+}
+.hamburger-menu:hover .bar-top {
+    transform: rotate(45deg);
+}
+.hamburger-menu:hover .bar-middle {
+    transform:translateX(1rem);
+    opacity: 0;
+}
+.hamburger-menu:hover .bar-bottom {
+    transform: rotate(-45deg);
+}
+  
+.main_box{
+    display: flex;
+    flex-wrap:column;
+    height: 88vh;
+}
+.latest_Update:last-of-type{
+    margin-left: auto;
+}
+.latest_Update{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.Featured_voices{
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    margin-left: 6rem;
+    justify-content:right;
+    gap: 2rem;
+}
+.ferdetail{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.ferdata{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+a{
+  width: 80%;
+  text-decoration: none;
+  color: rgb(60, 61, 61);
+  font-family: 'Josefin Sans', sans-serif;
+}
+@media only screen and (max-width: 882px){
+  .main_box{
+    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+  }
+  .latest_Update{
+    width: 100%;
+  }
+  .ferdetail{
+    width: 100%;
+  }
+  .Featured_voices{
+  margin: 2rem auto;
+    width: 100%;
+}
+}
